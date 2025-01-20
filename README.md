@@ -40,3 +40,12 @@
 ### GitHub Stats
 
 <p align="left"><img src="https://raw.githubusercontent.com/mianmuhammadse/mianmuhammadse/main/github-metrics.svg" /></p>
+
+<div align="center">
+
+  ---
+  #### <img src="https://media.giphy.com/media/WygrrSksa7x4PHFXxM/giphy.gif" height="30"> <em><b>Always up for a chat and geeking out about all things tech!</b>💻<3</em>
+
+  ![Mian Muhammad](https://komarev.com/ghpvc/?username=mianmuhammadse&color=blueviolet)
+
+</div>
