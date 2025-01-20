@@ -39,6 +39,10 @@
 
 ![Snake animation](https://github.com/mianmuhammadse/mianmuhammadse/blob/output/github-contribution-grid-snake-dark.svg)
 
+### GitHub Stats
+
+<p align="left"><img src="https://raw.githubusercontent.com/mianmuhammadse/mianmuhammadse/main/github-metrics.svg" /></p>
+
 <p align="center">
   <img alt="background" src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=100&section=footer"/>
 </p>
