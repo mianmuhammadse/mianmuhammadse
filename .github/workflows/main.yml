@@ -40,11 +40,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-
-
-
-
-  jobs:
   github-metrics:
     runs-on: ubuntu-latest
     permissions:
