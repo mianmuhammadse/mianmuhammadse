@@ -17,7 +17,9 @@
 </a>
 </p>
 
-[![Mian Muhammad's GitHub stats](https://github-readme-stats.vercel.app/api?username=mianmuhammadse)](https://github.com/mianmuhammadse/github-readme-stats)
+### GitHub Stats
+
+<p align="left"><img src="https://raw.githubusercontent.com/ChrisTitusTech/ChrisTitusTech/main/github-metrics.svg" /></p>
 
 <h2> 🚀 &nbsp;Some Tools I Have Used and Learned</h2>
 <p align="left">
