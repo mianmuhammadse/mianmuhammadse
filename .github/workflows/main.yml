@@ -1,4 +1,4 @@
-name: generate animation
+name: update readme
 
 on:
   # run automatically every 12 hours
