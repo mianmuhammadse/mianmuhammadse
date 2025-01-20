@@ -37,8 +37,6 @@
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="figma" width="45" height="45"/>
 </p>
 
-![Snake animation](https://github.com/mianmuhammadse/mianmuhammadse/blob/output/github-contribution-grid-snake-dark.svg)
-
 ### GitHub Stats
 
 <p align="left"><img src="https://raw.githubusercontent.com/mianmuhammadse/mianmuhammadse/main/github-metrics.svg" /></p>
