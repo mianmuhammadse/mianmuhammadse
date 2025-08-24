@@ -49,3 +49,12 @@
   ![Mian Muhammad](https://komarev.com/ghpvc/?username=mianmuhammadse&color=blueviolet)
 
 </div>
+
+<div align="left">
+
+  ---
+  <span>Lost access to previous GitHub account!</span>
+
+  ![Mian Muhammad](https://github.com/mian-muhammad)
+
+</div>
