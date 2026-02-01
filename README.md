@@ -36,7 +36,7 @@
     </td>
     <td valign="top" width="50%">
       <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&redirect=true">
-    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=false&mode=light">
+    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=false&mode=dark">
   </a>
     </td>
   </tr>
