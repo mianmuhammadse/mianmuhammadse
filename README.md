@@ -29,19 +29,22 @@
 
 ### 📊 GitHub Stats
 
-<table>
+<table align="center">
   <tr>
     <td valign="top" width="50%">
       <img src="https://raw.githubusercontent.com/mianmuhammadse/mianmuhammadse/main/github-metrics.svg" alt="GitHub Stats" />
     </td>
     <td valign="top" width="50%">
       <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&redirect=true">
-    <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=false&mode=dark">
-  </a>
+        <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=false" alt="Spotify Now Playing" />
+      </a>
+      <br/><br/>
+      <a href="https://github.com/mianmuhammadse/stremio-github-profile">
+        <img src="https://stremio.mianmuhammad.dev/api/view?uid=mianmuhammad&theme=natemoo-re&show_offline=true&v=3" alt="Stremio Now Watching" />
+      </a>
     </td>
   </tr>
 </table>
-
 ---
 
 ### 📌 Previous Account
