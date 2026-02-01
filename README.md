@@ -41,14 +41,7 @@
 
 <p align="left"><img src="https://raw.githubusercontent.com/mianmuhammadse/mianmuhammadse/main/github-metrics.svg" /></p>
 
-<div align="center">
-
-  ---
-  #### <img src="https://media.giphy.com/media/WygrrSksa7x4PHFXxM/giphy.gif" height="30"> <em><b>Always up for a chat and geeking out about all things tech!</b>💻<3</em>
-
-  ![Mian Muhammad](https://komarev.com/ghpvc/?username=mianmuhammadse&color=blueviolet)
-
-</div>
+[![spotify-github-profile](https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=false)](https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&redirect=true)
 
 <div align="left">
 
