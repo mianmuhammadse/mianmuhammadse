@@ -39,7 +39,7 @@
       <br/><br/>
       <h3 align="center">📺 Recently Watched</h3>
       <a href="https://github.com/mianmuhammadse/stremio-github-profile">
-        <img src="https://stremio.mianmuhammad.dev/api/view?uid=mianmuhammad&theme=natemoo-re&show_offline=true&v=3" alt="Stremio Now Watching" />
+        <img src="https://stremio.mianmuhammad.dev/api/view?uid=mianmuhammad&source=stremio&cover_image=true&theme=natemoo-re&show_offline=true&background_color=121212&interchange=false&bar_color=8a5dc0&bar_color_cover=false&v=3" alt="Stremio Now Watching" />
       </a>
     </td>
   </tr>
