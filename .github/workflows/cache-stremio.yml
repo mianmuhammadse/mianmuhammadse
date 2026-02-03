@@ -15,7 +15,7 @@ jobs:
 
       - name: Fetch Stremio SVG
         run: |
-          curl --fail --max-time 10 -s "https://stremio.mianmuhammad.dev/api/view?uid=mianmuhammad&theme=natemoo-re&show_offline=true&show_recents=true&recents_count=3&cover_image=true&background_color=121212&bar_color=8a5dc0" -o stremio-card.svg
+          curl --fail --max-time 60 -s "https://stremio.mianmuhammad.dev/api/view?uid=mianmuhammad&source=stremio&cover_image=true&theme=natemoo-re&show_offline=true&background_color=121212&interchange=false&bar_color=8a5dc0&show_recents=true&recents_limit=3&bar_color_cover=false" -o stremio-card.svg
 
       - name: Validate SVG
         run: |
