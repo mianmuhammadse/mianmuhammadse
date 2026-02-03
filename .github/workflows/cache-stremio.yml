@@ -28,16 +28,26 @@ jobs:
             exit 1
           fi
           echo "SUCCESS: SVG is valid"
-
+          
       - name: Commit and Push Cached SVG
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
-          mv stremio-card.svg /tmp/stremio-card.svg
+      
+          # Stash any changes (including the new SVG)
+          git stash --include-untracked
+      
+          # Get latest repo safely
           git pull origin main --rebase
-          mv /tmp/stremio-card.svg stremio-card.svg
+      
+          # Bring back the SVG
+          git stash pop || true
+      
           git add stremio-card.svg
+      
+          # Commit only if changed
           git diff --cached --quiet || git commit -m "chore: update cached stremio card"
+      
           git push
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
