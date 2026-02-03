@@ -36,11 +36,14 @@
       <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&redirect=true">
         <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=false" alt="Spotify Now Playing" />
       </a>
-      <br/><br/>
+      <br/>
       <h3 align="center">📺 Recently Watched</h3>
       <a href="https://github.com/mianmuhammadse/stremio-github-profile">
         <img src="./stremio-card.svg" alt="Stremio Recently Watched" />
       </a>
+      <br/>
+      <h3 align="center">📈 Activity Graph</h3>
+      <img src="https://github-readme-activity-graph.vercel.app/graph?username=mianmuhammadse&theme=tokyo-night" alt="Activity Graph" />
     </td>
   </tr>
 </table>
