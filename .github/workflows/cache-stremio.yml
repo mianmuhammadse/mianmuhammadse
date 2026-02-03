@@ -1,0 +1,38 @@
+name: Cache Stremio Card
+
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+
+jobs:
+  cache:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Fetch Stremio SVG
+        run: |
+          curl --fail --max-time 10 -s "https://stremio.mianmuhammad.dev/api/view?uid=mianmuhammad&theme=natemoo-re&show_offline=true&show_recents=true&recents_count=5&cover_image=true&background_color=121212&bar_color=8a5dc0" -o stremio-card.svg
+
+      - name: Validate SVG
+        run: |
+          if [ ! -s stremio-card.svg ]; then
+            echo "ERROR: SVG file is empty"
+            exit 1
+          fi
+          if ! grep -q "<svg" stremio-card.svg; then
+            echo "ERROR: File is not a valid SVG"
+            exit 1
+          fi
+          echo "SUCCESS: SVG is valid"
+
+      - name: Commit and Push Cached SVG
+        run: |
+          git config user.email "actions@github.com"
+          git config user.name "GitHub Actions"
+          git add stremio-card.svg
+          git diff --cached --quiet || git commit -m "chore: update cached stremio card"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
