@@ -33,6 +33,7 @@ jobs:
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
+          git pull origin main --rebase
           git add stremio-card.svg
           git diff --cached --quiet || git commit -m "chore: update cached stremio card"
           git push
