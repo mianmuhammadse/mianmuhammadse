@@ -39,7 +39,7 @@
       <br/><br/>
       <h3 align="center">📺 Recently Watched</h3>
       <a href="https://github.com/mianmuhammadse/stremio-github-profile">
-        <img src="https://raw.githubusercontent.com/mianmuhammadse/mianmuhammadse/main/stremio-card.svg" alt="Stremio Recently Watched" />
+        <img src="./stremio-card.svg" alt="Stremio Recently Watched" />
       </a>
     </td>
   </tr>
