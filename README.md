@@ -44,6 +44,15 @@
       <br/>
       <h3 align="center">📈 Activity Graph</h3>
       <img src="https://github-readme-activity-graph.vercel.app/graph?username=mianmuhammadse&theme=tokyo-night" alt="Activity Graph" />
+      <br/>
+      <h3 align="center">📋 Profile Summary</h3>
+      <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mianmuhammadse&theme=tokyonight" alt="Profile Summary" />
+      <br/>
+      <p align="center">
+        <img src="https://komarev.com/ghpvc/?username=mianmuhammadse&color=blue&style=for-the-badge" alt="Profile Views" />
+        <img src="https://img.shields.io/github/followers/mianmuhammadse?style=for-the-badge&logo=github" alt="Followers" />
+        <img src="https://img.shields.io/github/stars/mianmuhammadse?style=for-the-badge&logo=github" alt="Stars" />
+      </p>
     </td>
   </tr>
 </table>
