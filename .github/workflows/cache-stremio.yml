@@ -15,7 +15,7 @@ jobs:
 
       - name: Fetch Stremio SVG
         run: |
-          curl --fail --max-time 60 -s "https://stremio.mianmuhammad.dev/api/view?uid=mianmuhammad&source=stremio&cover_image=true&theme=natemoo-re&show_offline=true&background_color=121212&interchange=false&bar_color=8a5dc0&show_recents=true&recents_limit=3&bar_color_cover=false" -o stremio-card.svg
+          curl --fail --max-time 60 -s "https://stremio.mianmuhammad.dev/api/view?uid=mianmuhammad&theme=natemoo-re&show_offline=true&show_recents=true&recents_count=3&cover_image=true&background_color=121212&bar_color=8a5dc0" -o stremio-card.svg
 
       - name: Validate SVG
         run: |
@@ -33,11 +33,11 @@ jobs:
         run: |
           git config user.email "actions@github.com"
           git config user.name "GitHub Actions"
-          git stash
+          mv stremio-card.svg /tmp/stremio-card.svg
           git pull origin main --rebase
-          git stash pop
+          mv /tmp/stremio-card.svg stremio-card.svg
           git add stremio-card.svg
           git diff --cached --quiet || git commit -m "chore: update cached stremio card"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
