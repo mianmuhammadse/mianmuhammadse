@@ -37,4 +37,4 @@ jobs:
           git diff --cached --quiet || git commit -m "chore: update cached stremio card"
           git push
         env:
-          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
