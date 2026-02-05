@@ -28,26 +28,26 @@
 <table align="center">
   <tr>
     <td valign="top" width="50%">
-      <h3 align="center">📊 GitHub Stats</h3>
+      <h3 align="left">📋 Profile Summary</h3>
+      <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mianmuhammadse&theme=tokyonight" alt="Profile Summary" />
+      <br/><br/>
+      <h3 align="left">📊 GitHub Stats</h3>
       <img src="https://raw.githubusercontent.com/mianmuhammadse/mianmuhammadse/main/github-metrics.svg" alt="GitHub Stats" />
     </td>
     <td valign="top" width="50%">
-      <h3 align="center">🎵 Now Playing</h3>
+      <h3 align="left">🎵 Now Playing</h3>
       <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&redirect=true">
         <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=false" alt="Spotify Now Playing" />
       </a>
-      <br/>
-      <h3 align="center">📺 Recently Watched</h3>
+      <br/><br/>
+      <h3 align="left">📺 Recently Watched</h3>
       <a href="https://github.com/mianmuhammadse/stremio-github-profile">
         <img src="./stremio-card.svg" alt="Stremio Recently Watched" />
       </a>
-      <br/>
-      <h3 align="center">📈 Activity Graph</h3>
+      <br/><br/>
+      <h3 align="left">📈 Activity Graph</h3>
       <img src="https://github-readme-activity-graph.vercel.app/graph?username=mianmuhammadse&theme=tokyo-night" alt="Activity Graph" />
-      <br/>
-      <h3 align="center">📋 Profile Summary</h3>
-      <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mianmuhammadse&theme=tokyonight" alt="Profile Summary" />
-      <br/>
+      <br/><br/>
       <p align="center">
         <img src="https://komarev.com/ghpvc/?username=mianmuhammadse&color=blue&style=for-the-badge" alt="Profile Views" />
         <img src="https://img.shields.io/github/followers/mianmuhammadse?style=for-the-badge&logo=github" alt="Followers" />
