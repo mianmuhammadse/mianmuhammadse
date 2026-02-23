@@ -158,6 +158,8 @@
     <div xmlns="http://www.w3.org/1999/xhtml" class="container">
       
         
+          <img src="data:image/png;base64, " class="cover" />
+        
         <div class="info">
           <div class="status">
             <svg class="logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
@@ -178,8 +180,8 @@
               <div class="bar"></div>
             </div>
           </div>
-          <div class="title">Offline</div>
-          <div class="subtitle">Currently not playing on Stremio</div>
+          <div class="title">Paatal Lok (2020)</div>
+          <div class="subtitle">S02E01 - Head On</div>
         </div>
       
 
