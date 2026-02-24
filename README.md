@@ -37,7 +37,7 @@
     <td valign="top" width="50%">
       <h3 align="left">🎵 Now Playing</h3>
       <a href="https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&redirect=true">
-        <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&cover_image=true&theme=novatorem&show_offline=false&background_color=121212&interchange=false&profanity=false&bar_color=53b14f&bar_color_cover=false" alt="Spotify Now Playing" />
+        <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=false&profanity=true&bar_color=53b14f&bar_color_cover=false&mode=light" alt="Spotify Now Playing" />
       </a>
       <br/><br/>
       <h3 align="left">📺 Recently Watched</h3>
