@@ -2,7 +2,7 @@
 """
 fetch_books.py
 Reads your Apple Books library using py-apple-books and writes
-a markdown snippet to books_output.md for injection into your README.
+an HTML snippet to books_output.md for injection into your README.
 """
 
 from py_apple_books import PyAppleBooks
@@ -14,13 +14,12 @@ OUTPUT_FILE           = "books_output.md"
 PROGRESS_BAR_LEN      = 10
 
 
-def progress_bar(pct: float) -> str:
+def progress_bar_html(pct_raw: float) -> str:
+    """Return an HTML progress bar given a 0-100 float."""
+    pct = pct_raw / 100
     filled = round(pct * PROGRESS_BAR_LEN)
-    return "█" * filled + "░" * (PROGRESS_BAR_LEN - filled)
-
-
-def pct_label(pct: float) -> str:
-    return f"{round(pct * 100)}%"
+    bar = "█" * filled + "░" * (PROGRESS_BAR_LEN - filled)
+    return f'<code>{bar}</code> {round(pct_raw)}%'
 
 
 def build_section(api: PyAppleBooks) -> str:
@@ -48,43 +47,44 @@ def build_section(api: PyAppleBooks) -> str:
 
     lines = []
 
-    # ── Stats (top) ───────────────────────────────────────────────────────────
+    # ── Stats ─────────────────────────────────────────────────────────────────
     lines.append(
-        f"<sub><b>{total_finished}</b> finished &nbsp;·&nbsp; "
-        f"<b>{total_reading}</b> in progress &nbsp;·&nbsp; "
-        f"<b>{total_books}</b> total in library &nbsp;·&nbsp; "
-        f"Last updated: {updated_at}</sub>"
+        f'<sub><b>{total_finished}</b> finished &nbsp;·&nbsp; '
+        f'<b>{total_reading}</b> in progress &nbsp;·&nbsp; '
+        f'<b>{total_books}</b> total in library &nbsp;·&nbsp; '
+        f'Last updated: {updated_at}</sub>'
     )
     lines.append("")
 
     # ── Currently Reading ─────────────────────────────────────────────────────
     lines.append("<h4>📖 Currently Reading</h4>")
     if currently_reading:
-        lines.append("| Book | Author | Progress |")
-        lines.append("|------|--------|----------|")
+        lines.append("<table>")
+        lines.append("<tr><th>Book</th><th>Author</th><th>Progress</th></tr>")
         for book in currently_reading[:MAX_CURRENTLY_READING]:
-            pct    = (getattr(book, "reading_progress", 0) or 0.0) / 100
-            bar    = progress_bar(pct)
-            label  = pct_label(pct)
-            title  = (book.title  or "Unknown").replace("|", "\\|")
-            author = (book.author or "Unknown").replace("|", "\\|")
-            lines.append(f"| **{title}** | {author} | `{bar}` {label} |")
+            progress = getattr(book, "reading_progress", 0) or 0.0
+            bar      = progress_bar_html(progress)
+            title    = (book.title  or "Unknown").replace("<", "&lt;").replace(">", "&gt;")
+            author   = (book.author or "Unknown").replace("<", "&lt;").replace(">", "&gt;")
+            lines.append(f"<tr><td><b>{title}</b></td><td>{author}</td><td>{bar}</td></tr>")
+        lines.append("</table>")
     else:
-        lines.append("_Nothing in progress right now._")
+        lines.append("<p><em>Nothing in progress right now.</em></p>")
 
     lines.append("")
 
     # ── Finished ──────────────────────────────────────────────────────────────
     lines.append("<h4>✅ Recently Finished</h4>")
     if finished:
-        lines.append("| Book | Author |")
-        lines.append("|------|--------|")
+        lines.append("<table>")
+        lines.append("<tr><th>Book</th><th>Author</th></tr>")
         for book in finished[:MAX_FINISHED]:
-            title  = (book.title  or "Unknown").replace("|", "\\|")
-            author = (book.author or "Unknown").replace("|", "\\|")
-            lines.append(f"| **{title}** | {author} |")
+            title  = (book.title  or "Unknown").replace("<", "&lt;").replace(">", "&gt;")
+            author = (book.author or "Unknown").replace("<", "&lt;").replace(">", "&gt;")
+            lines.append(f"<tr><td><b>{title}</b></td><td>{author}</td></tr>")
+        lines.append("</table>")
     else:
-        lines.append("_No finished books yet._")
+        lines.append("<p><em>No finished books yet.</em></p>")
 
     return "\n".join(lines)
 

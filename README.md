@@ -62,12 +62,13 @@
 <sub><b>0</b> finished &nbsp;·&nbsp; <b>1</b> in progress &nbsp;·&nbsp; <b>2</b> total in library &nbsp;·&nbsp; Last updated: March 09, 2026</sub>
 
 <h4>📖 Currently Reading</h4>
-| Book | Author | Progress |
-|------|--------|----------|
-| **History of God** | Karen Armstrong | `░░░░░░░░░░` 3% |
+<table>
+<tr><th>Book</th><th>Author</th><th>Progress</th></tr>
+<tr><td><b>History of God</b></td><td>Karen Armstrong</td><td><code>░░░░░░░░░░</code> 3%</td></tr>
+</table>
 
 <h4>✅ Recently Finished</h4>
-_No finished books yet._
+<p><em>No finished books yet.</em></p>
 <!-- BOOKS:END --></td>
   </tr>
 </table>
