@@ -59,14 +59,15 @@
     <td colspan="2">
       <h3 align="left">📚 Reading</h3>
 <!-- BOOKS:START -->
-### 📖 Currently Reading
+<sub><b>0</b> finished &nbsp;·&nbsp; <b>1</b> in progress &nbsp;·&nbsp; <b>2</b> total in library &nbsp;·&nbsp; Last updated: March 09, 2026</sub>
 
+<h4>📖 Currently Reading</h4>
 | Book | Author | Progress |
 |------|--------|----------|
 | **History of God** | Karen Armstrong | `░░░░░░░░░░` 3% |
+| **History of God** | Karen Armstrong | `░░░░░░░░░░` 3% |
 
-### ✅ Recently Finished
-
+<h4>✅ Recently Finished</h4>
 _No finished books yet._
 
 **0** finished &nbsp;·&nbsp; **1** in progress &nbsp;·&nbsp; **2** total in library
