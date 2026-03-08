@@ -1,0 +1,71 @@
+# .github/workflows/update-books.yml
+#
+# Self-hosted GitHub Action — Apple Books README updater
+#
+# Prerequisites:
+#   1. A self-hosted runner registered on your Mac.
+#      → Repo Settings → Actions → Runners → New self-hosted runner
+#      → Follow the macOS instructions, then start the runner with `./run.sh`
+#
+#   2. py_apple_books installed on the runner machine:
+#      pip install py_apple_books
+#
+#   3. Your README.md must contain these two marker comments where you want
+#      the books section to appear:
+#
+#         <!-- BOOKS:START -->
+#         <!-- BOOKS:END -->
+#
+#   4. Grant the workflow write access to the repo:
+#      → Repo Settings → Actions → General → Workflow permissions → Read and write
+
+name: Update Apple Books Stats
+
+on:
+  schedule:
+    # Runs every day at 08:00 UTC (1 PM PKT)
+    - cron: "0 8 * * *"
+
+  # Allow manual trigger from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-books:
+    name: Fetch & Inject Apple Books Stats
+    runs-on: self-hosted   # ← your Mac runner
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          # Use a PAT if your repo is private, otherwise GITHUB_TOKEN is fine
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install py_apple_books --upgrade --quiet
+
+      - name: Fetch Apple Books data
+        run: python fetch_books.py
+
+      - name: Inject into README
+        run: python update_readme.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          # Only commit if there's actually a diff
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "📚 Update Apple Books reading stats"
+            git push
+          fi
