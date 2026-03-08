@@ -65,7 +65,6 @@
 | Book | Author | Progress |
 |------|--------|----------|
 | **History of God** | Karen Armstrong | `░░░░░░░░░░` 3% |
-| **History of God** | Karen Armstrong | `░░░░░░░░░░` 3% |
 
 <h4>✅ Recently Finished</h4>
 _No finished books yet._
