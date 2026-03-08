@@ -15,7 +15,7 @@ on:
 jobs:
   update-books:
     name: Fetch & Inject Apple Books Stats
-    runs-on: self-hosted   # ← your Mac runner
+    runs-on: self-hosted
 
     steps:
       - name: Checkout repository
@@ -46,6 +46,8 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "📚 Update Apple Books reading stats"
+            git stash
             git pull --rebase origin main
+            git stash pop
             git push
           fi
