@@ -46,8 +46,19 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "📚 Update Apple Books reading stats"
-            git stash
+
+            # Stash only if there are unstaged changes
+            STASHED=false
+            if ! git diff --quiet; then
+              git stash
+              STASHED=true
+            fi
+
             git pull --rebase origin main
-            git stash pop
+
+            if [ "$STASHED" = true ]; then
+              git stash pop
+            fi
+
             git push
           fi
