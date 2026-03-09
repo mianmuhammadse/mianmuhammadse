@@ -27,6 +27,12 @@
 
 <table align="center">
   <tr>
+    <td colspan="2">
+      <h3 align="left">📚 Reading</h3>
+<!-- BOOKS:START -->
+<!-- BOOKS:END --></td>
+  </tr>
+  <tr>
     <td valign="top" width="50%">
       <h3 align="left">📋 Profile Summary</h3>
       <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=mianmuhammadse&theme=tokyonight" alt="Profile Summary" />
@@ -54,22 +60,6 @@
         <img src="https://img.shields.io/github/stars/mianmuhammadse?style=for-the-badge&logo=github" alt="Stars" />
       </p>
     </td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <h3 align="left">📚 Reading</h3>
-<!-- BOOKS:START -->
-<sub><b>0</b> finished &nbsp;·&nbsp; <b>1</b> in progress &nbsp;·&nbsp; <b>3</b> total in library &nbsp;·&nbsp; Last updated: March 09, 2026</sub>
-
-<h4>📖 Currently Reading</h4>
-<table>
-<tr><th></th><th>Book</th><th>Author</th><th>Progress</th></tr>
-<tr><td><img src="https://covers.openlibrary.org/b/isbn/0694515035-M.jpg?default=false" width="30" height="45" style="border-radius:3px" onerror="this.style.display='none'"/></td><td><b>History of God</b></td><td>Karen Armstrong</td><td><code>░░░░░░░░░░</code> 3%</td></tr>
-</table>
-
-<h4>✅ Recently Finished</h4>
-<p><em>No finished books yet.</em></p>
-<!-- BOOKS:END --></td>
   </tr>
 </table>
 
