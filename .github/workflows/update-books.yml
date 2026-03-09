@@ -50,3 +50,11 @@ jobs:
             git pull --rebase origin main
             git push
           fi
+
+      - name: Trigger portfolio rebuild
+              run: |
+                curl -X POST \
+                  -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
+                  -H "Accept: application/vnd.github.v3+json" \
+                  https://api.github.com/repos/mianmuhammadse/mianmuhammadse.github.io/actions/workflows/deploy.yml/dispatches \
+                  -d '{"ref":"gh-pages"}'
