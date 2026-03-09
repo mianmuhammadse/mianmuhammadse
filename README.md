@@ -44,7 +44,7 @@
   </tr>
   <tr>
     <td colspan="2">
-      <h3 align="left">📈 Reading Progress &nbsp;<a href="https://mianmuhammadse.github.io/mianmuhammadse/reading_report.html"><img src="https://img.shields.io/badge/Full_Report-7aa2f7?style=flat-square&logo=github&logoColor=white"/></a></h3>
+      <h3 align="left">📈 Reading Progress &nbsp;<a href="https://mianmuhammad.dev/reading"><img src="https://img.shields.io/badge/Full_Report-7aa2f7?style=flat-square&logo=github&logoColor=white"/></a></h3>
 <img src="./reading_chart.svg" alt="Reading Progress Chart" width="100%"/></td>
   </tr>
   <tr>
