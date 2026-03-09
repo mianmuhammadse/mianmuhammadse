@@ -1,2 +1,3 @@
 .venv/
 books_output.md
+.isbn_cache.json
