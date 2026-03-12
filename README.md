@@ -30,7 +30,7 @@
     <td colspan="2">
       <h3 align="left">📚 Reading</h3>
 <!-- BOOKS:START -->
-<sub><b>0</b> finished &nbsp;·&nbsp; <b>1</b> in progress &nbsp;·&nbsp; <b>3</b> total in library &nbsp;·&nbsp; Last updated: March 12, 2026</sub>
+<sub><b>0</b> finished &nbsp;·&nbsp; <b>1</b> in progress &nbsp;·&nbsp; <b>4</b> total in library &nbsp;·&nbsp; Last updated: March 12, 2026</sub>
 
 <h4>📖 Currently Reading</h4>
 <table>
