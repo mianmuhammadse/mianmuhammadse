@@ -30,12 +30,12 @@
     <td colspan="2">
       <h3 align="left">📚 Reading</h3>
 <!-- BOOKS:START -->
-<sub><b>0</b> finished &nbsp;·&nbsp; <b>1</b> in progress &nbsp;·&nbsp; <b>4</b> total in library &nbsp;·&nbsp; Last updated: March 12, 2026</sub>
+<sub><b>0</b> finished &nbsp;·&nbsp; <b>1</b> in progress &nbsp;·&nbsp; <b>4</b> total in library &nbsp;·&nbsp; Last updated: March 14, 2026</sub>
 
 <h4>📖 Currently Reading</h4>
 <table>
 <tr><th></th><th>Book</th><th>Author</th><th>Progress</th></tr>
-<tr><td><img src="https://covers.openlibrary.org/b/isbn/0694515035-M.jpg?default=false" width="30" height="45" style="border-radius:3px" onerror="this.style.display='none'"/></td><td><b>History of God</b></td><td>Karen Armstrong</td><td><code>█░░░░░░░░░</code> 8%</td></tr>
+<tr><td><img src="https://covers.openlibrary.org/b/isbn/0694515035-M.jpg?default=false" width="30" height="45" style="border-radius:3px" onerror="this.style.display='none'"/></td><td><b>History of God</b></td><td>Karen Armstrong</td><td><code>█░░░░░░░░░</code> 9%</td></tr>
 </table>
 
 <h4>✅ Recently Finished</h4>
