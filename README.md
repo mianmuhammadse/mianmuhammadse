@@ -36,7 +36,7 @@
 <table>
 <tr><th></th><th>Book</th><th>Author</th><th>Progress</th></tr>
 <tr><td><img src="https://covers.openlibrary.org/b/isbn/0694515035-M.jpg?default=false" width="30" height="45" style="border-radius:3px" onerror="this.style.display='none'"/></td><td><b>History of God</b></td><td>Karen Armstrong</td><td><code>██░░░░░░░░</code> 20%</td></tr>
-<tr><td><img src="https://covers.openlibrary.org/b/isbn/1119547660-M.jpg?default=false" width="30" height="45" style="border-radius:3px" onerror="this.style.display='none'"/></td><td><b>Python for Data Science For Dummies</b></td><td>John Paul Mueller</td><td><code>░░░░░░░░░░</code> 4%</td></tr>
+<tr><td><img src="https://covers.openlibrary.org/b/isbn/1119547660-M.jpg?default=false" width="30" height="45" style="border-radius:3px" onerror="this.style.display='none'"/></td><td><b>Python for Data Science For Dummies</b></td><td>John Paul Mueller</td><td><code>█░░░░░░░░░</code> 5%</td></tr>
 </table>
 
 <h4>✅ Recently Finished</h4>
