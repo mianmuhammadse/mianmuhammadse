@@ -39,6 +39,10 @@
     {
       "date": "2026-03-19",
       "progress": 19.97
+    },
+    {
+      "date": "2026-03-20",
+      "progress": 19.97
     }
   ],
   "Python for Data Science For Dummies": [
@@ -56,6 +60,10 @@
     },
     {
       "date": "2026-03-19",
+      "progress": 5.06
+    },
+    {
+      "date": "2026-03-20",
       "progress": 5.06
     }
   ]
