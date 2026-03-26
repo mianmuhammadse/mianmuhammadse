@@ -11,8 +11,9 @@ import urllib.parse
 import urllib.request
 import json
 import os
+import re
 
-MAX_CURRENTLY_READING = 5
+MAX_CURRENTLY_READING = 2
 MAX_FINISHED          = 5
 OUTPUT_FILE           = "books_output.md"
 PROGRESS_BAR_LEN      = 10
@@ -76,6 +77,21 @@ def esc(text: str) -> str:
     return (text or "Unknown").replace("<", "&lt;").replace(">", "&gt;")
 
 
+_EDITION_RE = re.compile(
+    r",?\s*(?:[\w]+\s+)?edition\b[,]?",
+    re.IGNORECASE,
+)
+MAX_TITLE_LEN = 45
+
+
+def clean_title(raw: str) -> str:
+    """Strip redundant edition text and truncate long titles."""
+    title = _EDITION_RE.sub("", raw).strip().rstrip(",").strip()
+    if len(title) > MAX_TITLE_LEN:
+        title = title[:MAX_TITLE_LEN].rstrip() + "…"
+    return title
+
+
 def build_section(api: PyAppleBooks) -> str:
     books        = list(api.list_books())
     isbn_cache   = load_isbn_cache()
@@ -117,14 +133,15 @@ def build_section(api: PyAppleBooks) -> str:
         lines.append("<table>")
         lines.append("<tr><th></th><th>Book</th><th>Author</th><th>Progress</th></tr>")
         for book in currently_reading[:MAX_CURRENTLY_READING]:
-            progress = getattr(book, "reading_progress", 0) or 0.0
-            bar      = progress_bar_html(progress)
-            title    = esc(book.title)
-            author   = esc(book.author)
-            isbn     = fetch_isbn(book.title or "", book.author or "", isbn_cache)
-            img      = cover_url(isbn, book.title or "")
-            cover    = f'<img src="{img}" width="30" height="45" style="border-radius:3px" onerror="this.style.display=\'none\'"/>'
-            lines.append(f"<tr><td>{cover}</td><td><b>{title}</b></td><td>{author}</td><td>{bar}</td></tr>")
+            progress    = getattr(book, "reading_progress", 0) or 0.0
+            bar         = progress_bar_html(progress)
+            full_title  = esc(book.title)
+            short_title = esc(clean_title(book.title or ""))
+            author      = esc(book.author)
+            isbn        = fetch_isbn(book.title or "", book.author or "", isbn_cache)
+            img         = cover_url(isbn, book.title or "")
+            cover       = f'<img src="{img}" width="30" height="45" style="border-radius:3px" onerror="this.style.display=\'none\'"/>'
+            lines.append(f'<tr><td>{cover}</td><td title="{full_title}"><b>{short_title}</b></td><td>{author}</td><td>{bar}</td></tr>')
         lines.append("</table>")
     else:
         lines.append("<p><em>Nothing in progress right now.</em></p>")
@@ -137,9 +154,10 @@ def build_section(api: PyAppleBooks) -> str:
         lines.append("<table>")
         lines.append("<tr><th>Book</th><th>Author</th></tr>")
         for book in finished[:MAX_FINISHED]:
-            title  = esc(book.title)
-            author = esc(book.author)
-            lines.append(f"<tr><td><b>{title}</b></td><td>{author}</td></tr>")
+            full_title  = esc(book.title)
+            short_title = esc(clean_title(book.title or ""))
+            author      = esc(book.author)
+            lines.append(f'<tr><td title="{full_title}"><b>{short_title}</b></td><td>{author}</td></tr>')
         lines.append("</table>")
     else:
         lines.append("<p><em>No finished books yet.</em></p>")
