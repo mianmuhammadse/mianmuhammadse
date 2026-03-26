@@ -30,13 +30,15 @@
     <td colspan="2">
       <h3 align="left">📚 Reading</h3>
 <!-- BOOKS:START -->
-<sub><b>0</b> finished &nbsp;·&nbsp; <b>2</b> in progress &nbsp;·&nbsp; <b>4</b> total in library &nbsp;·&nbsp; Last updated: March 25, 2026</sub>
+<sub><b>0</b> finished &nbsp;·&nbsp; <b>4</b> in progress &nbsp;·&nbsp; <b>6</b> total in library &nbsp;·&nbsp; Last updated: March 26, 2026</sub>
 
 <h4>📖 Currently Reading</h4>
 <table>
 <tr><th></th><th>Book</th><th>Author</th><th>Progress</th></tr>
 <tr><td><img src="https://covers.openlibrary.org/b/isbn/0694515035-M.jpg?default=false" width="30" height="45" style="border-radius:3px" onerror="this.style.display='none'"/></td><td><b>History of God</b></td><td>Karen Armstrong</td><td><code>██░░░░░░░░</code> 20%</td></tr>
 <tr><td><img src="https://covers.openlibrary.org/b/isbn/1119547660-M.jpg?default=false" width="30" height="45" style="border-radius:3px" onerror="this.style.display='none'"/></td><td><b>Python for Data Science For Dummies</b></td><td>John Paul Mueller</td><td><code>█░░░░░░░░░</code> 5%</td></tr>
+<tr><td><img src="https://covers.openlibrary.org/b/title/Crucial%20Conversations%3A%20Tools%20for%20Talking%20When%20Stakes%20are%20High%2C%20Third%20Edition%2C%203rd%20Edition-M.jpg?default=false" width="30" height="45" style="border-radius:3px" onerror="this.style.display='none'"/></td><td><b>Crucial Conversations: Tools for Talking When Stakes are High, Third Edition, 3rd Edition</b></td><td>Joseph Grenny</td><td><code>░░░░░░░░░░</code> 4%</td></tr>
+<tr><td><img src="https://covers.openlibrary.org/b/isbn/9781593272821-M.jpg?default=false" width="30" height="45" style="border-radius:3px" onerror="this.style.display='none'"/></td><td><b>Eloquent JavaScript</b></td><td>Marijn Haverbeke</td><td><code>░░░░░░░░░░</code> 0%</td></tr>
 </table>
 
 <h4>✅ Recently Finished</h4>
