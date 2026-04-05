@@ -30,13 +30,13 @@
     <td colspan="2">
       <h3 align="left">📚 Reading</h3>
 <!-- BOOKS:START -->
-<sub><b>0</b> finished &nbsp;·&nbsp; <b>4</b> in progress &nbsp;·&nbsp; <b>6</b> total in library &nbsp;·&nbsp; Last updated: April 04, 2026</sub>
+<sub><b>0</b> finished &nbsp;·&nbsp; <b>4</b> in progress &nbsp;·&nbsp; <b>6</b> total in library &nbsp;·&nbsp; Last updated: April 05, 2026</sub>
 
 <h4>📖 Currently Reading</h4>
 <table>
 <tr><th></th><th>Book</th><th>Author</th><th>Progress</th></tr>
 <tr><td><img src="https://covers.openlibrary.org/b/isbn/0694515035-M.jpg?default=false" width="30" height="45" style="border-radius:3px" onerror="this.style.display='none'"/></td><td title="History of God"><b>History of God</b></td><td>Karen Armstrong</td><td><code>██░░░░░░░░</code> 20%</td></tr>
-<tr><td><img src="https://covers.openlibrary.org/b/isbn/1119547660-M.jpg?default=false" width="30" height="45" style="border-radius:3px" onerror="this.style.display='none'"/></td><td title="Python for Data Science For Dummies"><b>Python for Data Science For Dummies</b></td><td>John Paul Mueller</td><td><code>█░░░░░░░░░</code> 5%</td></tr>
+<tr><td><img src="https://covers.openlibrary.org/b/title/Crucial%20Conversations%3A%20Tools%20for%20Talking%20When%20Stakes%20are%20High%2C%20Third%20Edition%2C%203rd%20Edition-M.jpg?default=false" width="30" height="45" style="border-radius:3px" onerror="this.style.display='none'"/></td><td title="Crucial Conversations: Tools for Talking When Stakes are High, Third Edition, 3rd Edition"><b>Crucial Conversations: Tools for Talking When…</b></td><td>Joseph Grenny</td><td><code>█░░░░░░░░░</code> 6%</td></tr>
 </table>
 
 <h4>✅ Recently Finished</h4>
