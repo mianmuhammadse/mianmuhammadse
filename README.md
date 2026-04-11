@@ -41,12 +41,8 @@
 
 <h4>✅ Recently Finished</h4>
 <p><em>No finished books yet.</em></p>
-<!-- BOOKS:END --></td>
-  </tr>
-  <tr>
-    <td colspan="2">
-      <h3 align="left">📈 Reading Progress &nbsp;<a href="https://mianmuhammad.dev/reading"><img src="https://img.shields.io/badge/Full_Report-7aa2f7?style=flat-square&logo=github&logoColor=white"/></a></h3>
-<img src="./reading_chart.svg" alt="Reading Progress Chart" width="100%"/></td>
+<!-- BOOKS:END -->
+    </td>
   </tr>
   <tr>
     <td valign="top" width="50%">
@@ -62,13 +58,11 @@
         <img src="https://spotify-github-profile.kittinanx.com/api/view?uid=313bw5ukgg7txniehcj77bhikpe4&cover_image=true&theme=spotify-embed&show_offline=true&background_color=121212&interchange=false&profanity=true&bar_color=53b14f&bar_color_cover=false&mode=light" alt="Spotify Now Playing" />
       </a>
       <br/><br/>
-      <h3 align="left">📺 Recently Watched</h3>
-      <a href="https://github.com/mianmuhammadse/stremio-github-profile">
-        <img src="./stremio-card.svg" alt="Stremio Recently Watched" />
-      </a>
-      <br/><br/>
       <h3 align="left">📈 Activity Graph</h3>
       <img src="https://github-readme-activity-graph.vercel.app/graph?username=mianmuhammadse&theme=tokyo-night" alt="Activity Graph" />
+      <br/><br/>
+      <h3 align="left">📈 Reading Progress &nbsp;<a href="https://mianmuhammad.dev/reading"><img src="https://img.shields.io/badge/Full_Report-7aa2f7?style=flat-square&logo=github&logoColor=white"/></a></h3>
+      <img src="./reading_chart.svg" alt="Reading Progress Chart" width="100%"/>
       <br/><br/>
       <p align="center">
         <img src="https://komarev.com/ghpvc/?username=mianmuhammadse&color=blue&style=for-the-badge" alt="Profile Views" />
@@ -84,5 +78,5 @@
 ### 📌 Previous Account
 
 > **Note:** I lost access to my previous GitHub account. You can find my earlier work here:
-> 
+>
 > [![Previous Account](https://img.shields.io/badge/Previous_Account-mian--muhammad-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/mian-muhammad)
