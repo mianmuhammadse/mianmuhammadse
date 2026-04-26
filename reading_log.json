@@ -167,6 +167,10 @@
     {
       "date": "2026-04-24",
       "progress": 19.97
+    },
+    {
+      "date": "2026-04-26",
+      "progress": 19.97
     }
   ],
   "Python for Data Science For Dummies": [
@@ -313,6 +317,10 @@
     {
       "date": "2026-04-24",
       "progress": 5.06
+    },
+    {
+      "date": "2026-04-26",
+      "progress": 5.06
     }
   ],
   "Crucial Conversations: Tools for Talking When Stakes are High, Third Edition, 3rd Edition": [
@@ -427,6 +435,10 @@
     {
       "date": "2026-04-24",
       "progress": 7.34
+    },
+    {
+      "date": "2026-04-26",
+      "progress": 7.34
     }
   ],
   "Eloquent JavaScript": [
@@ -540,6 +552,10 @@
     },
     {
       "date": "2026-04-24",
+      "progress": 0.37
+    },
+    {
+      "date": "2026-04-26",
       "progress": 0.37
     }
   ]
